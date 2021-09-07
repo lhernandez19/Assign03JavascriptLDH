@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+	<!-- Pickdate css -->
+    <link rel="stylesheet" href="/assets/css/classic.css">
+    <link rel="stylesheet" href="/assets/css/classic.date.css">
+    <linke rel ="stylesheet" href="">
+    
+	<!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Questrial" rel="stylesheet">
+    
+	<!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/ballons.css">
+
+    <title>Assignt 03: Javascript</title>
+</head>
+<body>
+
+    <!-- Content -->
+    <div class="container">
+        <h1 id="loadSeeker">Happy Birthday!</h1><hr />
+
+    <!-- Form -->
+        <form role="form">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday</label>
+                        <input type="text" class="form-control" id="birthday" placeholder="Enter birthday" />                        
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select your favorite balloons</h5>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="green">
+                                <label class="form-check-label" for="green" data-color="green">Green balloons</label>
+                            </div>
+                            <div  class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="blue">
+                                <label class="form-check-label" for="blue" data-color="blue">Blue balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="red">
+                                <label class="form-check-label" for="red" data-color="red">Red balloons</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="allBalloons">
+                                <label class="form-check-label" for="allBallons"><b>Select all</b></label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
+                    <div id="toast" class="toast">
+                        <div class="toast-body">
+                            You must select a ballon.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                    <img src="/img/green.png" class="balloons" alt="green balloon" id="greenImg" />
+                    <img src="/img/blue.png" class="balloons" alt="blue balloon" id="blueImg" />
+                    <img src="/img/red.png" class="balloons" alt="red balloon" id="redImg" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript bundle boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Pickdata js -->
+    <script src="/assets/js/picker.js"></script>
+    <script src="/assets/js/picker.date.js"></script>
+
+    <!-- My Javascript -->
+    <script src="/assets/js/balloons.js"></script>
+
+</body>
+</html>
